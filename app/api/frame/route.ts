@@ -7,16 +7,16 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
 
   const nextId = idAsNumber + 1
 
-  if(idAsNumber === 14){
+  if(idAsNumber === 7){
       return new NextResponse(`<!DOCTYPE html><html><head>
-    <title>This is frame 14</title>
+    <title>This is frame 7</title>
     <meta property="fc:frame" content="vNext" />
-    <meta property="fc:frame:image" content="${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/QmUXJVpDS1NC437qNnnZ4gNqiAfVhzLU1DyMCaWYdKqPTb/Image14.jpg" />
-    <meta property="fc:frame:button:1" content="Visit pinata.cloud" />
+    <meta property="fc:frame:image" content="${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/QmaBrMjQ85RGQp7Qk1Xd9HaBzXepWBk9K8mpqkc4dt3uwh/Image7.jpg" />
+    <meta property="fc:frame:button:1" content="Visit Bing.com to create" />
     <meta property="fc:frame:button:1:action" content="post_redirect" />
-    <meta property="fc:frame:button:2" content="Blog post Tutorial" />
+    <meta property="fc:frame:button:2" content="Learn more about Frames" />
     <meta property="fc:frame:button:2:action" content="post_redirect" />
-    <meta property="fc:frame:button:3" content="Video Tutorial" />
+    <meta property="fc:frame:button:3" content="Create your own Frame" />
     <meta property="fc:frame:button:3:action" content="post_redirect" />
     <meta property="fc:frame:post_url" content="${process.env.NEXT_PUBLIC_BASE_URL}/api/end" />
   </head></html>`);
@@ -24,8 +24,8 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
   return new NextResponse(`<!DOCTYPE html><html><head>
     <title>This is frame ${id}</title>
     <meta property="fc:frame" content="vNext" />
-    <meta property="fc:frame:image" content="${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/QmUXJVpDS1NC437qNnnZ4gNqiAfVhzLU1DyMCaWYdKqPTb/Image${id}.jpg" />
-    <meta property="fc:frame:button:1" content="Next Page" />
+    <meta property="fc:frame:image" content="${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/QmaBrMjQ85RGQp7Qk1Xd9HaBzXepWBk9K8mpqkc4dt3uwh/Image${id}.jpg" />
+    <meta property="fc:frame:button:1" content="Next Image" />
     <meta property="fc:frame:post_url" content="${process.env.NEXT_PUBLIC_BASE_URL}/api/frame?id=${nextId}" />
   </head></html>`);
   }
