@@ -4,20 +4,20 @@ import type { Metadata } from 'next';
 const frameMetadata = getFrameMetadata({
   buttons: [
     {
-      label: "Begin"
+      label: "View 7 Images"
     }
   ],
-  image: `${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/QmUXJVpDS1NC437qNnnZ4gNqiAfVhzLU1DyMCaWYdKqPTb/Image1.jpg`,
+  image: `${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/QmaBrMjQ85RGQp7Qk1Xd9HaBzXepWBk9K8mpqkc4dt3uwh/Image1.jpg`,
   post_url: `${process.env.NEXT_PUBLIC_BASE_URL}/api/frame?id=1`,
 });
 
 export const metadata: Metadata = {
-  title: 'Vacation Hotspots',
-  description: 'A frame displaying great vacation spots',
+  title: 'Create AI generated images',
+  description: 'Create AI generated images',
   openGraph: {
-    title: 'Vacation Hotspots',
-    description: 'A frame displaying great vacation spots',
-    images: [`${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/QmUXJVpDS1NC437qNnnZ4gNqiAfVhzLU1DyMCaWYdKqPTb/Image1.jpg`],
+    title: 'Create AI generated images',
+    description: 'Create AI generated images',
+    images: [`${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/QmaBrMjQ85RGQp7Qk1Xd9HaBzXepWBk9K8mpqkc4dt3uwh/Image1.jpg`],
   },
   other: {
     ...frameMetadata,
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <h1>Vacation Hotspots</h1>
+      <h1>Create AI generated images</h1>
     </>
   );
 }
