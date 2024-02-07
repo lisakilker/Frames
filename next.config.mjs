@@ -4,7 +4,7 @@ const nextConfig = {
   async redirects(){
     return [
       {
-        source: '/undewater',
+        source: '/underwater',
         destination: 'https://www.bing.com/images/create',
         permanent: false
       },
