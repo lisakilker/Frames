@@ -7,7 +7,7 @@ const frameMetadata = getFrameMetadata({
       label: "Begin"
     }
   ],
-  image: `${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/QmbUsCnrWkvmq9sJFVy5nsuiMcZm9a2SGmxNhibPzt21Qa/Image1.jpg`,
+  image: `${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/QmUXJVpDS1NC437qNnnZ4gNqiAfVhzLU1DyMCaWYdKqPTb/Image1.jpg`,
   post_url: `${process.env.NEXT_PUBLIC_BASE_URL}/api/frame?id=1`,
 });
 
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Vacation Hotspots',
     description: 'A frame displaying great vacation spots',
-    images: [`${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/QmbUsCnrWkvmq9sJFVy5nsuiMcZm9a2SGmxNhibPzt21Qa/Image1.jpg`],
+    images: [`${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/QmUXJVpDS1NC437qNnnZ4gNqiAfVhzLU1DyMCaWYdKqPTb/Image1.jpg`],
   },
   other: {
     ...frameMetadata,
