@@ -4,7 +4,7 @@ import type { Metadata } from 'next';
 const frameMetadata = getFrameMetadata({
   buttons: [
     {
-      label: "View 7 Images"
+      label: "Click to view all 8 images"
     }
   ],
   image: `${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/QmcRwetfaVHVwGrASvabTVoiX6tX6539SUeBWR6cfVUZ3v/Image1.jpeg`,
