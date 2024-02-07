@@ -5,7 +5,7 @@ const nextConfig = {
     return [
       {
         source: '/vacationhotspots',
-        destination: 'https://travel.usnews.com/rankings/worlds-best-vacations/',
+        destination: 'https://www.bing.com/images/create',
         permanent: false
       },
       {
