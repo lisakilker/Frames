@@ -28,6 +28,8 @@ export default function Page() {
   return (
     <>
       <h1>Create AI generated images</h1>
+    <img src="https://alienlytecycle.mypinata.cloud/ipfs/QmcRwetfaVHVwGrASvabTVoiX6tX6539SUeBWR6cfVUZ3v"></img>
     </>
   );
 }
+
