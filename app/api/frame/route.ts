@@ -7,9 +7,9 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
 
   const nextId = idAsNumber + 1
 
-  if(idAsNumber === 7){
+  if(idAsNumber === 8){
       return new NextResponse(`<!DOCTYPE html><html><head>
-    <title>This is frame 7</title>
+    <title>This is frame 8</title>
     <meta property="fc:frame" content="vNext" />
     <meta property="fc:frame:image" content="${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/QmaBrMjQ85RGQp7Qk1Xd9HaBzXepWBk9K8mpqkc4dt3uwh/Image7.jpeg" />
     <meta property="fc:frame:button:1" content="Visit Bing.com to create" />
