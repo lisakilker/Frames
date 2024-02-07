@@ -7,11 +7,11 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
 
   const nextId = idAsNumber + 1
 
-  if(idAsNumber === 7){
+  if(idAsNumber === 8){
       return new NextResponse(`<!DOCTYPE html><html><head>
     <title>This is frame 7</title>
     <meta property="fc:frame" content="vNext" />
-    <meta property="fc:frame:image" content="${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/QmV71pbn9CBjZ5WS39EtfY9Rn15EuFLsN49xomQ29a8Txc/Image7.jpeg" />
+    <meta property="fc:frame:image" content="${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/QmV71pbn9CBjZ5WS39EtfY9Rn15EuFLsN49xomQ29a8Txc/Image8.jpeg" />
     <meta property="fc:frame:button:1" content="Create AI Images" />
     <meta property="fc:frame:button:1:action" content="post_redirect" />
     <meta property="fc:frame:button:2" content="Learn Frames" />
