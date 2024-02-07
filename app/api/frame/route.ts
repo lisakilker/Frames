@@ -7,11 +7,11 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
 
   const nextId = idAsNumber + 1
 
-  if(idAsNumber === 12){
+  if(idAsNumber === 14){
       return new NextResponse(`<!DOCTYPE html><html><head>
-    <title>This is frame 12</title>
+    <title>This is frame 14</title>
     <meta property="fc:frame" content="vNext" />
-    <meta property="fc:frame:image" content="${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/QmbUsCnrWkvmq9sJFVy5nsuiMcZm9a2SGmxNhibPzt21Qa/Image2.jpg" />
+    <meta property="fc:frame:image" content="${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/QmUXJVpDS1NC437qNnnZ4gNqiAfVhzLU1DyMCaWYdKqPTb/Image14.jpg" />
     <meta property="fc:frame:button:1" content="Visit pinata.cloud" />
     <meta property="fc:frame:button:1:action" content="post_redirect" />
     <meta property="fc:frame:button:2" content="Blog post Tutorial" />
@@ -24,7 +24,7 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
   return new NextResponse(`<!DOCTYPE html><html><head>
     <title>This is frame ${id}</title>
     <meta property="fc:frame" content="vNext" />
-    <meta property="fc:frame:image" content="${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/QmbUsCnrWkvmq9sJFVy5nsuiMcZm9a2SGmxNhibPzt21Qa/${id}.jpg" />
+    <meta property="fc:frame:image" content="${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/QmUXJVpDS1NC437qNnnZ4gNqiAfVhzLU1DyMCaWYdKqPTb/Image${id}.jpg" />
     <meta property="fc:frame:button:1" content="Next Page" />
     <meta property="fc:frame:post_url" content="${process.env.NEXT_PUBLIC_BASE_URL}/api/frame?id=${nextId}" />
   </head></html>`);
